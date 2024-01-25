@@ -1,4 +1,5 @@
-FROM registry.cn-hangzhou.aliyuncs.com/models2024/centos7:openjdk180
+#FROM registry.cn-hangzhou.aliyuncs.com/models2024/centos7:openjdk180
+FROM registry.cn-hangzhou.aliyuncs.com/models2024/centos7:clca-jdk18py3.9
 USER root
 RUN curl https://packages.microsoft.com/config/rhel/7/prod.repo | tee /etc/yum.repos.d/mssql-release.repo
 RUN yum remove unixODBC-utf16 unixODBC-utf16-devel
